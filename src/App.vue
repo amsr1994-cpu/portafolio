@@ -22,20 +22,47 @@ const misProyectos = [
     linkRepo: 'https://github.com/amsr1994-CPU'
   },
   {
-    id: 'migracion-ams',
-    titulo: 'Migración AMS',
-    subtitulo: 'BACKEND • ETL • SQL SERVER',
+    id: 'traspasos-ams',
+    titulo: 'Traspasos AMSystem',
+    subtitulo: 'BACKEND • ETL • .NET',
     stackCorto: 'C#, .NET Core, SQL Server, Vue.js',
-    resumen: 'Sistema de migración de datos de alto rendimiento diseñado para la transferencia segura de registros entre los sistemas Resiplus y Resitevip.',
+    resumen: 'Sistema ETL de alto rendimiento para la migración masiva y segura de datos críticos de negocio.',
     descripcionLarga: [
-      'Este sistema fue diseñado para resolver la complejidad de migrar miles de registros de pacientes y personal entre plataformas de gestión sanitaria distintas.',
-      'Implementé procesos ETL (Extracción, Transformación y Carga) utilizando C# para garantizar que la integridad de los datos se mantuviera al 100% durante el traspaso.',
-      'El proyecto incluye un dashboard de auditoría desarrollado en Vue.js que permite visualizar en tiempo real el progreso de la migración y detectar posibles conflictos de esquemas en la base de datos SQL Server.'
+      'Desarrollo de un motor de migración encargado de procesar, transformar y transferir un volumen masivo de datos e históricos (aproximadamente 68.000 documentos) entre sistemas de gestión.',
+      'Implementado en C# y .NET, el núcleo del software aplica complejas reglas de negocio para la conversión de esquemas relacionales, asegurando la integridad referencial y minimizando el tiempo de inactividad de los servidores.',
+      'Incluye una interfaz de control en Vue.js que actúa como panel de monitorización, permitiendo auditar el flujo de transferencia y conciliar datos en tiempo real.'
     ],
-    imagen: '', // Puedes poner una captura de tu dashboard aquí
-    linkSitio: '#',
+    imagen: '',
     linkRepo: 'https://github.com/amsr1994-CPU'
-  }
+  },
+  {
+    id: 'consultas-ams',
+    titulo: 'Consultas AMSystem',
+    subtitulo: 'DATA MONITORING • SQL SERVER',
+    stackCorto: 'SQL Server, Procedimientos Almacenados, .NET',
+    resumen: 'Herramienta avanzada de análisis, monitorización de infraestructura e informes mediante consultas optimizadas.',
+    descripcionLarga: [
+      'Diseño y optimización de una infraestructura de consultas complejas sobre bases de datos relacionales con un volumen masivo de información.',
+      'El proyecto se centró en la creación de vistas avanzadas, funciones escalares y procedimientos almacenados (Stored Procedures) altamente eficientes para generar informes analíticos de rendimiento de servidores y uso de recursos.',
+      'Se redujeron drásticamente los tiempos de respuesta en consultas críticas, garantizando la estabilidad del sistema durante picos de acceso y ofreciendo logs detallados para la toma de decisiones técnicas.'
+    ],
+    imagen: '',
+    linkRepo: 'https://github.com/amsr1994-CPU'
+  },
+  {
+    id: 'miapp3d',
+    titulo: 'MiApp3d',
+    subtitulo: 'MULTIPLATFORM • UI/UX',
+    stackCorto: 'Vue.js, Tailwind CSS, Vite',
+    resumen: 'Prototipo e interfaz web moderna enfocada en la visualización interactiva y experiencia de usuario.',
+    descripcionLarga: [
+      'MiApp3d es un proyecto enfocado en las interfaces de usuario de última generación utilizando el paradigma de diseño oscuro y componentes reactivos.',
+      'Desarrollado sobre Vue.js y Vite, exprime las capacidades de Tailwind CSS para lograr efectos visuales fluidos, layouts adaptables (responsive) y micro-interacciones de alta calidad.',
+      'Sirve como base sólida para herramientas que requieran dashboards limpios, optimizados y con una estética tecnológica premium muy cuidada.'
+    ],
+    imagen: '',
+    linkRepo: 'https://github.com/amsr1994-CPU'
+  },
 ]
 </script>
 
@@ -57,7 +84,7 @@ const misProyectos = [
     <a href="#" class="border border-white/20 px-4 py-2 rounded-full text-xs hover:bg-white hover:text-black transition uppercase font-bold">CV 📄</a>
     
     <div class="hidden lg:flex gap-4 text-gray-400">
-      <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="hover:text-white transition">
+      <a href="https://www.linkedin.com/in/andrés-manuel-sánchez-ramírez-10a9063b7" target="_blank" class="hover:text-white transition">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
       </a>
       <a href="https://github.com/amsr1994-CPU" target="_blank" class="hover:text-white transition">
@@ -89,33 +116,49 @@ const misProyectos = [
     </main>
 
     <section id="proyectos" class="py-20 px-10 bg-[#080808] border-t border-white/5">
-      <h3 class="text-3xl font-bold mb-12 text-center uppercase tracking-tighter">Proyectos Destacados</h3>
-      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        
-        <div @click="proyectoSeleccionado = misProyectos[0]" class="cursor-pointer group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-purple-500/50 transition duration-500">
-          <div class="h-64 bg-purple-900/20 flex items-center justify-center overflow-hidden">
-            <img src="./assets/hero.png" class="group-hover:scale-110 transition duration-500 object-cover w-full h-full opacity-40" />
-          </div>
-          <div class="p-8">
-            <span class="text-xs text-purple-400 font-mono tracking-widest">ANDROID NATIVE • SQLITE</span>
-            <h4 class="text-2xl font-bold mt-2 italic uppercase">Pinturas Santa Ana</h4>
-            <p class="text-gray-400 mt-4 text-sm leading-relaxed">Haz clic para ver detalles de la arquitectura y microservicios.</p>
-          </div>
+  <h3 class="text-3xl font-bold mb-12 text-center uppercase tracking-tighter italic text-gray-500">Proyectos Destacados</h3>
+  
+  <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    
+    <div 
+      v-for="(proyecto, index) in misProyectos" 
+      :key="proyecto.id"
+      @click="proyectoSeleccionado = misProyectos[index]" 
+      class="cursor-pointer group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-purple-500/50 transition duration-500 flex flex-col justify-between"
+    >
+      <div 
+        class="h-48 flex items-center justify-center overflow-hidden relative"
+        :class="index % 2 === 0 ? 'bg-purple-900/10' : 'bg-blue-900/10'"
+      >
+        <img v-if="proyecto.imagen" :src="proyecto.imagen" class="group-hover:scale-110 transition duration-500 object-cover w-full h-full opacity-40" />
+        <div v-else class="font-black text-4xl italic uppercase opacity-20 tracking-tighter" :class="index % 2 === 0 ? 'text-purple-500' : 'text-blue-500'">
+          {{ proyecto.id.split('-')[0] }}
         </div>
-
-        <div @click="proyectoSeleccionado = misProyectos[1]" class="cursor-pointer group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:border-blue-500/50 transition duration-500">
-          <div class="h-64 bg-blue-900/20 flex items-center justify-center">
-            <div class="text-blue-500/30 font-black text-6xl italic">SQL SERVER</div>
-          </div>
-          <div class="p-8">
-            <span class="text-xs text-blue-400 font-mono tracking-widest">BACKEND • ETL</span>
-            <h4 class="text-2xl font-bold mt-2 italic uppercase">Migración AMS</h4>
-            <p class="text-gray-400 mt-4 text-sm leading-relaxed">Haz clic para ver el dashboard de auditoría y procesos ETL.</p>
-          </div>
-        </div>
-
       </div>
-    </section>
+
+      <div class="p-8 flex-1 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono tracking-widest" :class="index % 2 === 0 ? 'text-purple-400' : 'text-blue-400'">
+            {{ proyecto.subtitulo }}
+          </span>
+          <h4 class="text-2xl font-bold mt-2 italic uppercase text-white">{{ proyecto.titulo }}</h4>
+          <p class="text-gray-400 mt-4 text-sm leading-relaxed">{{ proyecto.resumen }}</p>
+        </div>
+        
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span 
+            v-for="tech in proyecto.stackCorto.split(', ')" 
+            :key="tech"
+            class="px-2.5 py-1 bg-white/5 rounded-full text-[10px] text-gray-400 border border-white/5"
+          >
+            {{ tech }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <Transition
       enter-active-class="transition duration-300 ease-out"
@@ -173,7 +216,7 @@ const misProyectos = [
             <div class="flex flex-col md:flex-row md:justify-between mb-4">
               <div>
                 <h4 class="text-xl font-bold text-white italic uppercase">Prácticas Formativas (FCT) - DAM</h4>
-                <p class="text-purple-400 font-mono text-sm">Empresa en Jaén</p>
+                <p class="text-purple-400 font-mono text-sm">AMSystem Jaén</p>
               </div>
               <span class="text-xs text-gray-500 font-mono mt-2 md:mt-0">MARZO 2026 — MAYO 2026 (516 HORAS)</span>
             </div>
