@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+/* Añade esta línea para activar el control por clase manual en v4 */
+@variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
