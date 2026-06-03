@@ -17,13 +17,13 @@ export const misProyectos = [
       { titulo: 'Conversión Relacional', desc: 'Lógica transaccional estricta para mitigar pérdidas de integridad referencial.' },
       { titulo: 'Panel de Auditoría', desc: 'Dashboard reactivo en Vue.js para la monitorización de transferencias y logs en tiempo real.' }
     ],
-    imagenesGaleria: [],
+    imagenesGaleria:['/ImageTraspaso/menu.png','/ImageTraspaso/script.png','/ImageTraspaso/traspm.png','/ImageTraspaso/docs.png','/ImageTraspaso/objmig.png','/ImageTraspaso/seria.png','/ImageTraspaso/estadis.png','/ImageTraspaso/ajust.png'],
     tablaTecnologias: [
       { tech: 'C# / .NET', uso: 'Desarrollo del motor central de extracción, transformación y carga (ETL).' },
       { tech: 'SQL Server', uso: 'Optimización de tablas de destino, índices y optimización de procedimientos.' },
       { tech: 'Vue.js', uso: 'Interfaz gráfica del panel de control de transferencias.' }
     ],
-    imagen: '',
+    imagen: '/ImageTraspaso/menu.png',
     linkRepo: 'https://github.com/amsr1994-CPU'
   },
   {
@@ -43,7 +43,7 @@ export const misProyectos = [
       { titulo: 'Vistas Analíticas', desc: 'Consolidación de métricas complejas de infraestructura en reportes limpios.' },
       { titulo: 'Auditoría de Servidores', desc: 'Historial detallado de carga para la toma de decisiones sobre recursos técnicos.' }
     ],
-    imagenesGaleria: ['/ImageAnalitic/Panel.png'],
+    imagenesGaleria: ['/ImageAnalitic/Panel.png','/ImageAnalitic/1.png','/ImageAnalitic/2.png','/ImageAnalitic/3.png','/ImageAnalitic/4.png','/ImageAnalitic/5.png','/ImageAnalitic/6.png','/ImageAnalitic/7.png'],
     tablaTecnologias: [
       { tech: 'SQL Server', uso: 'Creación y tuning de funciones escalares, vistas complejas y procedimientos almacenados.' },
       { tech: '.NET', uso: 'Consumo asíncrono backend de reportes analíticos pesados.' }
@@ -68,36 +68,40 @@ export const misProyectos = [
       { titulo: 'Sincronización Inteligente', desc: 'Envío automático de transacciones acumuladas en cuanto se restablece la cobertura.' },
       { titulo: 'UI Material Design', desc: 'Diseño adaptado a las pautas de Google para una experiencia fluida e intuitiva.' }
     ],
-    imagenesGaleria: ['/hero.png'],
+    imagenesGaleria: ['/ImagePintura/cap1.png','/ImagePintura/cap2.png'],
     tablaTecnologias: [
       { tech: 'Java / Android SDK', uso: 'Desarrollo de actividades nativas, control de vistas e hilos asíncronos.' },
       { tech: 'SQLite', uso: 'Base de datos local relacional integrada en el dispositivo móvil.' }
     ],
-    imagen: '/hero.png',
+    imagen: '/ImagePintura/cap1.png',
     linkRepo: 'https://github.com/amsr1994-CPU'
   },
   {
     id: 'miapp3d',
-    titulo: 'MiApp3d',
-    subtitulo: 'MULTIPLATFORM • UI/UX',
-    tipo: 'Profesional',
-    stackCorto: 'Vue.js, Tailwind CSS, Vite',
-    resumen: 'Prototipo e interfaz web moderna enfocada en la visualización interactiva y experiencia de usuario.',
+    titulo: 'MiApp3D (en desarrollo)',
+    subtitulo: 'MULTIPLATFORM • UI/UX • 3D RENDERING',
+    tipo: 'Profesional / Proyecto Destacado',
+    stackCorto: 'Vue.js 3 (Composition API), Vite, Tailwind CSS, Three.js / Model-Viewer',
+    resumen: 'Plataforma web avanzada que integra un catálogo interactivo con visor de modelos 3D en tiempo real y Realidad Aumentada, conectando diseñadores, compradores y plantas de fabricación.',
     descripcionLarga: [
-      'MiApp3d es un proyecto enfocado en las interfaces de usuario de última generación utilizando el paradigma de diseño oscuro y componentes reactivos.',
-      'Desarrollado sobre Vue.js y Vite, exprime las capacidades de Tailwind CSS para lograr efectos visuales fluidos, layouts adaptables (responsive) y micro-interacciones de alta calidad.',
-      'Sirve como base sólida para herramientas que requieran dashboards limpios, optimizados y con una estética tecnológica premium muy cuidada.'
+      'MiApp3D es un ecosistema digital completo diseñado para la gestión y encargo de piezas tridimensionales, utilizando una interfaz premium de alto rendimiento y baja latencia.',
+      'Desarrollado sobre Vue.js 3 y Vite, el proyecto implementa un sistema robusto de autenticación por roles que divide la experiencia en tres paneles independientes: un catálogo interactivo para compradores, una central de telemetría y colas de trabajo en tiempo real para fabricantes, y una billetera digital para la gestión de regalías de diseñadores.',
+      'El núcleo visual explota las capacidades de Tailwind CSS para lograr micro-interacciones fluidas, layouts adaptables y una estética técnica oscura (holográfica/cyberpunk) optimizada para entornos industriales modernos.'
     ],
     funcionalidades: [
-      { titulo: 'Estética Cyberpunk Dark', desc: 'Fondo oscuro puro con acentos de luz neón y efectos de cristal esmerilado.' },
-      { titulo: 'Optimización de Carga con Vite', desc: 'Empaquetado ultra rápido y modularizado de componentes en el cliente.' }
+      { titulo: 'Visor 3D Dinámico & Realidad Aumentada', desc: 'Renderizado interactivo de archivos .glb en el cliente y previsualización en el espacio real del usuario mediante tecnología web AR.' },
+      { titulo: 'Pasarela de Pago Animada (Estilo iOS)', desc: 'Flujo de checkout express integrado con animaciones avanzadas basadas en estados dinámicos y simulación biométrica (FaceID).' },
+      { titulo: 'Panel de Telemetría Industrial', desc: 'Monitorización de colas de impresión y estados de manufactura síncronos para perfiles de fabricante.' },
+      { titulo: 'Arquitectura Segura y Modular', desc: 'Gestión de estados globales mediante Pinia, enrutamiento dinámico protegido por guardas de navegación y carga perezosa (lazy loading) para optimizar el rendimiento.' }
     ],
-    imagenesGaleria: [],
+    imagenesGaleria: ['./Image3d/login.png','./Image3d/explo.png','./Image3d/3d.png','./Image3d/carrit.png','./Image3d/diseñ.png','./Image3d/fabric.png','./Image3d/fabric2.png'],
     tablaTecnologias: [
-      { tech: 'Vue.js 3', uso: 'Estructuración modular mediante la Composition API para código escalable.' },
-      { tech: 'Tailwind CSS v4', uso: 'Estilos visuales avanzados mediante clases de utilidad de última generación.' }
+      { tech: 'Vue.js 3', uso: 'Estructuración modular mediante Composition API y gestión de estados reactivos complejos.' },
+      { tech: 'Model-Viewer (Google)', uso: 'Integración del motor gráfico en el DOM para el manejo e interacción de archivos tridimensionales sin penalizar la carga.' },
+      { tech: 'Tailwind CSS', uso: 'Diseño de interfaz personalizado con efectos de cristal esmerilado (glassmorphism), variables dinámicas y transiciones fluidas.' },
+      { tech: 'Vite', uso: 'Entorno de desarrollo y empaquetado ultra rápido con división de código (code-splitting) por componentes.' }
     ],
-    imagen: '',
+    imagen: './Image3d/login.png',
     linkRepo: 'https://github.com/amsr1994-CPU'
-  }
+}
 ]

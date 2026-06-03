@@ -10,15 +10,15 @@
           
           <div class="flex flex-col md:flex-row md:justify-between mb-4">
             <div>
-              <h4 class="text-xl font-bold text-neutral-900 dark:text-white italic uppercase">Prácticas Formativas (FCT) - DAM</h4>
-              <p class="text-purple-600 dark:text-purple-400 font-mono text-sm font-semibold">AMSystem Jaén</p>
+              <h4 class="text-xl font-bold text-neutral-900 dark:text-white italic uppercase">AMSystem - Jaén </h4>
+              <p class="text-purple-600 dark:text-purple-400 font-mono text-sm font-semibold">Prácticas Formativas (FCT) - DAM</p>
             </div>
-            <span class="text-xs text-neutral-400 dark:text-gray-500 font-mono mt-2 md:mt-0 font-bold">MARZO 2026 — MAYO 2026 (516 HORAS)</span>
+            <span class="text-xs text-neutral-400 dark:text-gray-500 font-mono mt-2 md:mt-0 font-bold">MARZO 2026 — JUNIO 2026 (516 HORAS)</span>
           </div>
           <ul class="text-neutral-600 dark:text-gray-400 text-sm space-y-3 list-disc list-inside leading-relaxed">
             <li>Desarrollo y mantenimiento de aplicaciones utilizando el stack <span class="text-neutral-900 dark:text-white font-semibold">.NET y C#</span>.</li>
             <li>Optimización de bases de datos relacionales con <span class="text-neutral-900 dark:text-white font-semibold">SQL Server</span>.</li>
-            <li>Colaboración en frontend con <span class="text-neutral-900 dark:text-white font-semibold">Vue.js</span>.</li>
+            <li>Desarrollo de frontend con <span class="text-neutral-900 dark:text-white font-semibold">Vue.js</span>.</li>
             <li>Uso de metodologías ágiles y Git.</li>
           </ul>
         </div>

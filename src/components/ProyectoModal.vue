@@ -1,3 +1,16 @@
+<script setup>
+// Definición de las propiedades que recibe desde App.vue
+defineProps({
+  proyecto: {
+    type: Object,
+    default: null
+  }
+})
+
+// Definición de los eventos que el modal puede avisar al padre
+defineEmits(['cerrar'])
+</script>
+
 <template>
   <Transition
     enter-active-class="transition duration-300 ease-out"
@@ -20,7 +33,9 @@
           <div class="flex flex-col md:flex-row gap-8 items-start">
             <div class="w-full md:w-5/12 h-56 bg-neutral-100 dark:bg-white/5 rounded-2xl flex items-center justify-center overflow-hidden border border-neutral-200 dark:border-white/10 shadow-sm">
               <img v-if="proyecto.imagen" :src="proyecto.imagen" class="object-cover w-full h-full opacity-90 dark:opacity-70" />
-              <span v-else class="text-neutral-300 dark:text-white/10 font-black italic text-3xl uppercase tracking-tighter">{{ proyecto.titulo.split(' ')[0] }}</span>
+              <span v-else class="text-neutral-300 dark:text-white/10 font-black italic text-3xl uppercase tracking-tighter">
+                {{ proyecto.titulo.split(' ')[0] }}
+              </span>
             </div>
             
             <div class="flex-1">
@@ -50,9 +65,8 @@
             <p v-for="parrafo in proyecto.descripcionLarga" :key="parrafo">{{ parrafo }}</p>
           </div>
 
-          <!-- Funcionalidades dinámicas -->
-          <div v-if="proyecto.funcionalidades && proyecto.funcionalidades.length" class="space-y-6 pt-4">
-            <h3 class="text-2xl font-bold uppercase tracking-tighter text-purple-600 dark:text-purple-400 italic">Funcionalidades</h3>
+          <div class="space-y-6 pt-4" v-if="proyecto.funcionalidades && proyecto.funcionalidades.length">
+            <h3 class="text-2xl font-bold uppercase tracking-tighter text-purple-600 dark:text-purple-400 italic">Funcionalidades Clave</h3>
             <ul class="space-y-4 max-w-4xl">
               <li v-for="func in proyecto.funcionalidades" :key="func.titulo" class="text-sm leading-relaxed">
                 <span class="text-green-600 dark:text-green-400 font-bold block md:inline-block md:w-64">• {{ func.titulo }}:</span>
@@ -61,31 +75,33 @@
             </ul>
           </div>
 
-          <!-- Galería -->
-          <div v-if="proyecto.imagenesGaleria && proyecto.imagenesGaleria.length" class="space-y-6 pt-4">
+          <div class="space-y-6 pt-4" v-if="proyecto.imagenesGaleria && proyecto.imagenesGaleria.length">
             <h3 class="text-2xl font-bold uppercase tracking-tighter text-purple-600 dark:text-purple-400 italic">Vista previa (Screenshots)</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div v-for="imgSrc in proyecto.imagenesGaleria" :key="imgSrc" class="border border-neutral-200 dark:border-white/10 bg-neutral-50 dark:bg-white/5 rounded-2xl overflow-hidden p-2 shadow-sm">
+              <div v-for="(imgSrc, index) in proyecto.imagenesGaleria" :key="index" class="border border-neutral-200 dark:border-white/10 bg-neutral-50 dark:bg-white/5 rounded-2xl overflow-hidden p-2 shadow-sm">
                 <img :src="imgSrc" class="w-full h-auto rounded-xl object-contain" />
               </div>
             </div>
           </div>
 
-          <!-- Tabla de Tecnologías -->
-          <div v-if="proyecto.tablaTecnologias && proyecto.tablaTecnologias.length" class="space-y-6 pt-4">
-            <h3 class="text-2xl font-bold uppercase tracking-tighter text-purple-600 dark:text-purple-400 italic">Tecnologías</h3>
+          <div class="space-y-6 pt-4" v-if="proyecto.tablaTecnologias && proyecto.tablaTecnologias.length">
+            <h3 class="text-2xl font-bold uppercase tracking-tighter text-purple-600 dark:text-purple-400 italic">Arquitectura y Tecnologías</h3>
             <div class="border border-neutral-200 dark:border-white/10 rounded-2xl overflow-hidden bg-neutral-50 dark:bg-white/[0.02] shadow-sm">
               <table class="w-full text-left border-collapse text-xs md:text-sm">
                 <thead>
                   <tr class="border-b border-neutral-200 dark:border-white/10 bg-neutral-100 dark:bg-white/[0.04] font-mono text-purple-700 dark:text-purple-300 uppercase tracking-wider">
                     <th class="p-4 md:p-5 font-bold text-center w-1/3">Tecnología</th>
-                    <th class="p-4 md:p-5 font-bold">Uso</th>
+                    <th class="p-4 md:p-5 font-bold">Rol / Uso en el sistema</th>
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-neutral-200 dark:divide-white/5 text-neutral-600 dark:text-gray-400">
                   <tr v-for="row in proyecto.tablaTecnologias" :key="row.tech" class="hover:bg-neutral-100/50 dark:hover:bg-white/[0.02] transition">
-                    <td class="p-4 md:p-5 font-bold text-neutral-900 dark:text-white text-center border-r border-neutral-200 dark:border-white/5">{{ row.tech }}</td>
-                    <td class="p-4 md:p-5 leading-relaxed">{{ row.uso }}</td>
+                    <td class="p-4 md:p-5 font-bold text-neutral-900 dark:text-white text-center border-r border-neutral-200 dark:border-white/5 bg-neutral-50/50 dark:bg-transparent">
+                      {{ row.tech }}
+                    </td>
+                    <td class="p-4 md:p-5 leading-relaxed">
+                      {{ row.uso }}
+                    </td>
                   </tr>
                 </tbody>
               </table>

@@ -1,8 +1,66 @@
 @import "tailwindcss";
 
-/* Añade esta línea para activar el control por clase manual en v4 */
+/* 1. Activación del control manual por clase en Tailwind v4 */
 @variant dark (&:where(.dark, .dark *));
 
+/* 2. Configuración de la etiqueta HTML raíz */
 html {
   scroll-behavior: smooth;
+}
+
+/* 3. Forzar el esquema de color correcto para mitigar textos invisibles */
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+/* 4. Estilos globales y adaptativos para la barra de scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scroll en MODO CLARO */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll en MODO OSCURO */
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.4); /* Toque lila en oscuro */
+}
+/* Al final de tu src/style.css o styles.css */
+
+/* Forzar que las propiedades de Tailwind dark: se disparen correctamente */
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Regla de seguridad para el contenedor principal */
+html.dark body {
+  background-color: #080808;
+  color: #ffffff;
 }
