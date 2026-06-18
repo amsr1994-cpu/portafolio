@@ -16,7 +16,7 @@ const { elRef } = useScrollReveal()
         </div>
         
         <div class="absolute top-10 -left-4 bg-neutral-50/90 dark:bg-black/60 backdrop-blur-md p-2 rounded-xl border border-neutral-200 dark:border-white/10 text-[10px] text-neutral-800 dark:text-white font-bold shadow-sm transition-all">
-          ✅ Alta adaptabilidad
+          ✅ Alta adaptabilidad en cualquier entorno de desarrollo
         </div>
         <div class="absolute bottom-20 -right-4 bg-neutral-50/90 dark:bg-black/60 backdrop-blur-md p-2 rounded-xl border border-neutral-200 dark:border-white/10 text-[10px] text-neutral-800 dark:text-white font-bold shadow-sm transition-all">
           🤝 Trabajo en equipo

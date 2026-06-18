@@ -43,7 +43,7 @@ export const misProyectos = [
       { titulo: 'Vistas Analíticas', desc: 'Consolidación de métricas complejas de infraestructura en reportes limpios.' },
       { titulo: 'Auditoría de Servidores', desc: 'Historial detallado de carga para la toma de decisiones sobre recursos técnicos.' }
     ],
-    imagenesGaleria: ['/ImageAnalitic/Panel.png','/ImageAnalitic/1.png','/ImageAnalitic/2.png','/ImageAnalitic/3.png','/ImageAnalitic/4.png','/ImageAnalitic/5.png','/ImageAnalitic/6.png','/ImageAnalitic/7.png'],
+    imagenesGaleria: ['/ImageAnalitic/Panel.png','/ImageAnalitic/1.png','/ImageAnalitic/2.png','/ImageAnalitic/3.png','/ImageAnalitic/4.png','/ImageAnalitic/5.png','/ImageAnalitic/6.png','/ImageAnalitic/7.png','/ImageAnalitic/8.png','/ImageAnalitic/9.png','/ImageAnalitic/10.png','/ImageAnalitic/11.png','/ImageAnalitic/12.png'], 
     tablaTecnologias: [
       { tech: 'SQL Server', uso: 'Creación y tuning de funciones escalares, vistas complejas y procedimientos almacenados.' },
       { tech: '.NET', uso: 'Consumo asíncrono backend de reportes analíticos pesados.' }
