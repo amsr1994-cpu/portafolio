@@ -64,3 +64,64 @@ html.dark body {
   background-color: #080808;
   color: #ffffff;
 }
+
+/* Animaciones de entrada al scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animado-scroll {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.animado-scroll.animado {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto de brillo en hover para tarjetas */
+.tarjeta-brillo {
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta-brillo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.06), transparent);
+  transform: skewX(-25deg);
+  transition: left 0.75s ease-in-out;
+}
+
+.tarjeta-brillo:hover::before {
+  left: 125%;
+}
+
+/* Animación sutil para el grid de fondo */
+@keyframes gridFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.fondo-grid {
+  animation: gridFloat 8s ease-in-out infinite;
+}
+
+/* Efecto de glow pulsante en hover */
+.glow-hover {
+  transition: box-shadow 0.4s ease;
+}
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15), 0 0 60px rgba(168, 85, 247, 0.05);
+}

@@ -1,13 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portafolio</title>
+    <meta name="description" content="Portafolio de Andrés Manuel Sánchez Ramírez — Desarrollador Fullstack & Multiplataforma especializado en .NET, C#, SQL Server y Vue.js" />
+    <meta name="author" content="Andrés Manuel Sánchez Ramírez" />
+    <meta name="theme-color" content="#080808" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AMSR Developer — Portafolio" />
+    <meta property="og:description" content="Desarrollador Fullstack & Multiplataforma especializado en .NET, C#, SQL Server y Vue.js" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amsr.dev" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AMSR Developer — Portafolio" />
+    <meta name="twitter:description" content="Desarrollador Fullstack & Multiplataforma especializado en .NET, C#, SQL Server y Vue.js" />
+
+    <title>AMSR Developer — Portafolio</title>
+
+    <script>
+      // Prevenir flash de tema claro antes de que Vue cargue
+      (function() {
+        var tema = localStorage.getItem('tema-oscuro')
+        if (tema === 'false') {
+          document.documentElement.classList.remove('dark')
+        } else {
+          document.documentElement.classList.add('dark')
+        }
+      })()
+    </script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" role="application" aria-label="Portafolio de Andrés Sánchez"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
