@@ -24,7 +24,7 @@ export const misProyectos = [
       { tech: 'Vue.js', uso: 'Interfaz gráfica del panel de control de transferencias.' }
     ],
     imagen: '/ImageTraspaso/menu.png',
-    linkRepo: 'https://github.com/amsr1994-CPU'
+    linkRepo: 'https://github.com/amsr1994-CPU/AMSConsultas-BACK'
   },
   {
     id: 'consultas-ams',
@@ -49,7 +49,7 @@ export const misProyectos = [
       { tech: '.NET', uso: 'Consumo asíncrono backend de reportes analíticos pesados.' }
     ],
     imagen: '/ImageAnalitic/Panel.png',
-    linkRepo: 'https://github.com/amsr1994-CPU'
+    linkRepo: 'https://github.com/amsr1994-CPU/AMSConsultas-BACK'
   },
   {
     id: 'santa-ana',
@@ -74,7 +74,7 @@ export const misProyectos = [
       { tech: 'SQLite', uso: 'Base de datos local relacional integrada en el dispositivo móvil.' }
     ],
     imagen: '/ImagePintura/cap1.png',
-    linkRepo: 'https://github.com/amsr1994-CPU'
+    linkRepo: 'https://github.com/amsr1994-CPU/PinturasSantaAna'
   },
   {
     id: 'miapp3d',
@@ -102,6 +102,6 @@ export const misProyectos = [
       { tech: 'Vite', uso: 'Entorno de desarrollo y empaquetado ultra rápido con división de código (code-splitting) por componentes.' }
     ],
     imagen: './Image3d/login.png',
-    linkRepo: 'https://github.com/amsr1994-CPU'
+    linkRepo: 'https://github.com/amsr1994-CPU/MiApp3D'
 }
 ]

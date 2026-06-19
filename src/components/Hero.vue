@@ -55,12 +55,12 @@ const { textoMostrado } = useTypewriter('FULLSTACK & MULTIPLATFORM DEVELOPER', {
         DISPONIBLE PARA TRABAJAR
       </div>
 
-      <div class="relative mb-6 group">
-        <div class="absolute inset-0 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full blur-3xl opacity-20 group-hover:opacity-60 transition duration-500"></div>
-        
-        <div class="relative w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full border-2 border-neutral-200 dark:border-white/10 p-2.5 bg-white/70 dark:bg-white/[0.01] backdrop-blur-md overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:shadow-purple-500/25">
-          <div class="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center text-white font-black text-4xl italic uppercase select-none">
-            A
+      <div class="relative w-full flex justify-center items-center mb-6">
+        <div class="relative group w-60 h-60 sm:w-64 sm:h-64 md:w-72 md:h-72">
+          <div class="absolute inset-0 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full blur-3xl opacity-20 group-hover:opacity-60 transition duration-500 pointer-events-none"></div>
+          
+          <div class="relative w-full h-full rounded-full border-2 border-neutral-200 dark:border-white/10 bg-white/70 dark:bg-white/[0.01] backdrop-blur-md overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:shadow-purple-500/25">
+            <img src="/CV/yo.png" alt="Andrés Sánchez" class="w-full h-full object-cover" />
           </div>
         </div>
       </div>
@@ -81,13 +81,11 @@ const { textoMostrado } = useTypewriter('FULLSTACK & MULTIPLATFORM DEVELOPER', {
         <a href="#proyectos" class="glow-hover w-full sm:w-auto text-center bg-neutral-900 text-white dark:bg-white dark:text-black px-10 py-3.5 rounded-xl font-bold hover:bg-purple-600 dark:hover:bg-purple-500 hover:text-white transition-all duration-300 shadow-md text-xs uppercase tracking-wider italic font-black" aria-label="Explorar proyectos destacados">
           Explorar Proyectos ↓
         </a>
-        <a href="/Andres_Sanchez_CV.pdf" target="_blank" rel="noopener noreferrer" class="glow-hover w-full sm:w-auto text-center bg-white dark:bg-white/5 text-neutral-800 dark:text-purple-300 border border-neutral-200 dark:border-white/10 px-8 py-3.5 rounded-xl font-bold hover:border-purple-500/50 transition-all duration-300 text-xs uppercase tracking-wider font-mono" aria-label="Descargar currículum vitae">
+        <a href="/CV/AMSR_DAM.pdf" target="_blank" rel="noopener noreferrer" class="glow-hover w-full sm:w-auto text-center bg-white dark:bg-white/5 text-neutral-800 dark:text-purple-300 border border-neutral-200 dark:border-white/10 px-8 py-3.5 rounded-xl font-bold hover:border-purple-500/50 transition-all duration-300 text-xs uppercase tracking-wider font-mono" aria-label="Descargar currículum vitae">
           DESCARGAR CV 📄
         </a>
       </div>
-    </div>
-
-    <div class="w-full max-w-6xl border-t border-neutral-200 dark:border-white/5 pt-4 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400 dark:text-gray-500 z-10">
+    </div> <div class="w-full max-w-6xl border-t border-neutral-200 dark:border-white/5 pt-4 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-400 dark:text-gray-500 z-10">
       <a href="mailto:amsr1994@outlook.com" class="flex items-center gap-2 hover:text-purple-500 transition duration-300" aria-label="Enviar correo electrónico">
         ✉️ <span class="lowercase">amsr1994@outlook.com</span>
       </a>

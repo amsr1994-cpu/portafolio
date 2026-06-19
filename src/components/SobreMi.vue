@@ -11,8 +11,8 @@ const { elRef } = useScrollReveal()
     <div ref="elRef" class="max-w-6xl mx-auto bg-white dark:bg-[#0b0b0b] dark:bg-gradient-to-br dark:from-white/5 dark:to-purple-500/5 border border-neutral-200 dark:border-white/10 rounded-[40px] p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 shadow-sm dark:shadow-none transition-all duration-300">
       
       <div class="relative w-full md:w-1/3 flex flex-col items-center">
-        <div class="w-64 h-64 rounded-full bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center text-white font-black text-6xl italic uppercase select-none shadow-lg" aria-label="Inicial de Andrés Sánchez">
-          A
+        <div class="w-64 h-64 rounded-full border-2 border-neutral-200 dark:border-white/10 overflow-hidden shadow-lg">
+          <img src="/CV/yo.png" alt="Andrés Sánchez" class="w-full h-full object-cover" />
         </div>
         
         <div class="absolute top-10 -left-4 bg-neutral-50/90 dark:bg-black/60 backdrop-blur-md p-2 rounded-xl border border-neutral-200 dark:border-white/10 text-[10px] text-neutral-800 dark:text-white font-bold shadow-sm transition-all">

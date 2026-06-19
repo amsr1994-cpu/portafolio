@@ -22,7 +22,7 @@ const toggleTheme = () => {
     </div>
 
     <div class="flex items-center gap-6">
-      <a href="/Andres_Sanchez_CV.pdf" target="_blank" class="border border-black/20 dark:border-white/20 px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black text-black dark:text-white transition uppercase font-bold" aria-label="Descargar currículum">CV 📄</a>
+      <a href="/CV/AMSR_DAM.pdf" target="_blank" class="border border-black/20 dark:border-white/20 px-4 py-2 rounded-full text-xs hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black text-black dark:text-white transition uppercase font-bold" aria-label="Descargar currículum">CV 📄</a>
       
       <div class="flex items-center gap-4 text-gray-500 dark:text-gray-400">
         <button @click="toggleTheme" class="hover:text-black dark:hover:text-white transition p-1 rounded-lg" aria-label="Cambiar tema oscuro/claro">
